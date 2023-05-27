@@ -45,7 +45,7 @@ plotresidual = st.container()
 
 
 with header:
-    st.title('The Police Victimisation Dataset2')
+    st.title('The Police Victimisation Dataset')
     st.text('blurb')
     
 with dataset:
