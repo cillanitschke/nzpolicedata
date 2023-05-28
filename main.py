@@ -32,8 +32,6 @@ st.markdown(
 
 
 header = st.container()
-dataset = st.container()
-features = st.container()
 model = st.container()
 plotresidual = st.container()
 
@@ -47,7 +45,8 @@ plotresidual = st.container()
 with header:
     st.title('The Police Victimisation Dataset')
     st.text('blurb')
-    
+
+dataset = st.expander('The Data Frame Used:', expanded=False)
 with dataset:
     st.header('The Data Frame Used:')
     st.text('This dataframe was used by merging several datasets (name sources).')
@@ -56,6 +55,7 @@ with dataset:
     df_crime_num_2 = pd.read_csv("data/crime_data.csv")
     st.write(df_crime_num_2.head(5))
 
+features = st.expander('Where We Sourced The Data', expanded=False)
 with features:
     st.header('Features')
     st.text('We will use the below variables to see if we can predict victimisations')
