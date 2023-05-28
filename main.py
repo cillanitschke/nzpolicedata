@@ -44,7 +44,7 @@ with header:
     st.title('The Police Victimisation Dataset')
     st.text('blurb')
 
-dataset = st.expander('The Data Frame Used:', expanded=False)
+dataset = st.expander('The Data Frame Used', expanded=False)
 with dataset:
     #st.header('The Data Frame Used:')
     st.text('This dataframe was used by merging several datasets (name sources).')
