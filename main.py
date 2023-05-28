@@ -39,7 +39,7 @@ header = st.container()
 #    return df_crime_num_2
 
 with header:
-    st.title('The Police Victimisation Dataset')
+    st.title('The NZ Police Victimisation Dataset')
     st.write("""
     blurb
     """)
@@ -58,7 +58,7 @@ with features:
     This dataframe was used by merging several datasets. Police crime data, sourced from the NZ Police
     website, Police numbers sourced from the NZ Police Annual Report and, Household Living Costs and the Unemployment
     Rate are sourced from NZ Statistics. It was then cleaned up and merged together adding several other variables.
-    We will use the below variables to see if we can predict victimisations
+    We will use the below variables to see if we can predict victimisations with multiple linear regression.
     """)
     st.markdown('* **Police Numbers by District (Region)**')
     st.markdown('* **Household Living Costs**')
