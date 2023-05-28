@@ -64,7 +64,7 @@ with features:
     st.markdown('* **Police District**')
 #sidebar
 st.sidebar.header('Select Conditions')
-st.sidebar.write(""" ### The Linear Regression Model """)
+st.sidebar.write(""" #### The Linear Regression Model """)
 
 model = st.container()
 with model:
