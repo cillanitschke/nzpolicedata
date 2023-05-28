@@ -72,8 +72,8 @@ model = st.container()
 with model:
     st.header('Linear Regression Model')
     st.write("""
-    Predicting Victimisations by selecting the variables Police numbers by district,
-    Unemployment Rate, District (or region), and Household living costs.
+    Predicting Victimisations by selecting the variables; Police numbers by district,
+    Unemployment Rate, District (region), and Household living costs.
     """)
 
 
