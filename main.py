@@ -52,10 +52,12 @@ with dataset:
 features = st.expander('Where We Sourced The Data', expanded=False)
 with features:
     #st.header('Features')
-    st.text('This dataframe was used by merging several datasets (name sources).')
-    st.text('It was then cleaned up and merged together adding several other variables.')
-    st.text('We will use the below variables to see if we can predict victimisations')
-    st.markdown('* **Police Numbers by Boundary**')
+    st.write("""
+    This dataframe was used by merging several datasets (name sources).
+    It was then cleaned up and merged together adding several other variables.
+    We will use the below variables to see if we can predict victimisations
+    """)
+    st.markdown('* **Police Numbers by District (Region)**')
     st.markdown('* **Household Living Costs**')
     st.markdown('* **Unemployment Rate (%)**')
     st.markdown('* **Police District**')
@@ -74,7 +76,7 @@ available_variables = ['District_Police_Num', 'hlc_index_amt_mean', 'Unemploymen
 
 # Define a dictionary for variable renaming
 variable_mapping = {
-    'District_Police_Num': 'Police Numbers by Boundary',
+    'District_Police_Num': 'Police Numbers by District',
     'hlc_index_amt_mean': 'Household Living Costs',
     'Unemployment rate (%)': 'Unemployment Rate (%)',
     'Boundary_Class': 'Police District'
