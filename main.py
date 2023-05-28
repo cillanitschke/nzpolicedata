@@ -38,8 +38,6 @@ header = st.container()
 #    df_crime_num_2 = pd.read_csv("data/crime_data.csv")
 #    return df_crime_num_2
 
-
-
 with header:
     st.title('The Police Victimisation Dataset')
     st.text('blurb')
@@ -47,8 +45,6 @@ with header:
 dataset = st.expander('The Data Frame Used', expanded=False)
 with dataset:
     #st.header('The Data Frame Used:')
-    st.text('This dataframe was used by merging several datasets (name sources).')
-    st.text('It was then cleaned up and merged together adding several other variables.')
     #df_crime_num_2  = get_data()
     df_crime_num_2 = pd.read_csv("data/crime_data.csv")
     st.write(df_crime_num_2.head(5))
@@ -56,6 +52,8 @@ with dataset:
 features = st.expander('Where We Sourced The Data', expanded=False)
 with features:
     #st.header('Features')
+    st.text('This dataframe was used by merging several datasets (name sources).')
+    st.text('It was then cleaned up and merged together adding several other variables.')
     st.text('We will use the below variables to see if we can predict victimisations')
     st.markdown('* **Police Numbers by Boundary**')
     st.markdown('* **Household Living Costs**')
