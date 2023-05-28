@@ -40,11 +40,12 @@ header = st.container()
 
 with header:
     st.title('The Police Victimisation Dataset')
-    st.text('blurb')
+    st.write("""
+    blurb
+    """)
 
 dataset = st.expander('The Data Frame Used', expanded=False)
 with dataset:
-    #st.header('The Data Frame Used:')
     #df_crime_num_2  = get_data()
     df_crime_num_2 = pd.read_csv("data/crime_data.csv")
     st.write(df_crime_num_2.head(5))
@@ -61,14 +62,17 @@ with features:
     st.markdown('* **Household Living Costs**')
     st.markdown('* **Unemployment Rate (%)**')
     st.markdown('* **Police District**')
-
-st.sidebar.header('Sidebar Header')
+#sidebar
+st.sidebar.header('Select Conditions')
+st.sidebar.write(""" ### The Linear Regression Model """)
 
 model = st.container()
 with model:
     st.header('Linear Regression Model')
-    st.text('Predicting Victimisations by selecting the variables Police numbers by district,')
-    st.text('Unemployment Rate, District (or region), and Household living costs.')
+    st.write("""
+    Predicting Victimisations by selecting the variables Police numbers by district,
+    Unemployment Rate, District (or region), and Household living costs.
+    """)
 
 
 # Select available variables
