@@ -41,7 +41,8 @@ header = st.container()
 with header:
     st.title('The NZ Police Victimisation Dataset')
     st.write("""
-    blurb
+    Crime is a hot topic at the moment, with these models we will see if there were any insights we could gain from analysing crime data from NZ police website.
+    The initial data pulled is from 2019-2022 and contained almost one millions lines of information.
     """)
 
 dataset = st.expander('The Data', expanded=False)
