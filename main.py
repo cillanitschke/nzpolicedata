@@ -32,8 +32,6 @@ st.markdown(
 
 
 header = st.container()
-model = st.container()
-plotresidual = st.container()
 
 #@st.cache_data
 #def get_data():
@@ -66,6 +64,7 @@ with features:
 
 st.sidebar.header('Sidebar Header')
 
+model = st.container()
 with model:
     st.header('Police Numbers & Household Living Costs Predict Crime Numbers: ')
     st.text('more text')
