@@ -44,8 +44,9 @@ with header:
     blurb
     """)
 
-dataset = st.expander('The Data Frame Used', expanded=False)
+dataset = st.expander('The Data', expanded=False)
 with dataset:
+    st.write("""The Data Frame:""")
     #df_crime_num_2  = get_data()
     df_crime_num_2 = pd.read_csv("data/crime_data.csv")
     st.write(df_crime_num_2.head(5))
