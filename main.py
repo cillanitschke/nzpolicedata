@@ -46,7 +46,7 @@ with header:
 
 dataset = st.expander('The Data Frame Used:', expanded=False)
 with dataset:
-    st.header('The Data Frame Used:')
+    #st.header('The Data Frame Used:')
     st.text('This dataframe was used by merging several datasets (name sources).')
     st.text('It was then cleaned up and merged together adding several other variables.')
     #df_crime_num_2  = get_data()
@@ -55,7 +55,7 @@ with dataset:
 
 features = st.expander('Where We Sourced The Data', expanded=False)
 with features:
-    st.header('Features')
+    #st.header('Features')
     st.text('We will use the below variables to see if we can predict victimisations')
     st.markdown('* **Police Numbers by Boundary**')
     st.markdown('* **Household Living Costs**')
@@ -66,8 +66,8 @@ st.sidebar.header('Sidebar Header')
 
 model = st.container()
 with model:
-    st.header('Police Numbers & Household Living Costs Predict Crime Numbers: ')
-    st.text('more text')
+    st.header('Linear Regression Model')
+    st.text('Predicting Victimisations by selecting the variables Police numbers by district, Unemployment Rate, District (or region), and Household living costs')
 
 
 # Select available variables
