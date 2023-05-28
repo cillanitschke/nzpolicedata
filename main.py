@@ -55,8 +55,9 @@ features = st.expander('Data Sources', expanded=False)
 with features:
     #st.header('Features')
     st.write("""
-    This dataframe was used by merging several datasets (name sources).
-    It was then cleaned up and merged together adding several other variables.
+    This dataframe was used by merging several datasets. Police crime data, sourced from the NZ Police
+    website, Police numbers sourced from the NZ Police Annual Report and, Household Living Costs and the Unemployment
+    Rate are sourced from NZ Statistics. It was then cleaned up and merged together adding several other variables.
     We will use the below variables to see if we can predict victimisations
     """)
     st.markdown('* **Police Numbers by District (Region)**')
