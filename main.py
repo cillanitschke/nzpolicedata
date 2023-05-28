@@ -68,7 +68,7 @@ model = st.container()
 with model:
     st.header('Linear Regression Model')
     st.text('Predicting Victimisations by selecting the variables Police numbers by district,')
-    st.text('Unemployment Rate, District (or region), and Household living costs')
+    st.text('Unemployment Rate, District (or region), and Household living costs.')
 
 
 # Select available variables
