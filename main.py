@@ -51,7 +51,7 @@ with dataset:
     df_crime_num_2 = pd.read_csv("data/crime_data.csv")
     st.write(df_crime_num_2.head(5))
 
-features = st.expander('Where We Sourced The Data', expanded=False)
+features = st.expander('Data Sources', expanded=False)
 with features:
     #st.header('Features')
     st.write("""
